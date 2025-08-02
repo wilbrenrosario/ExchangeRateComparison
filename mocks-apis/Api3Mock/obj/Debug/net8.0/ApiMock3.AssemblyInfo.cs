@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ApiMock3")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9ad6d8bfec66ddd9ebd9d07077b58d9456313d6a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+50866774507a930dd35434a23dba0f479bfe19e7")]
 [assembly: System.Reflection.AssemblyProductAttribute("ApiMock3")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ApiMock3")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
