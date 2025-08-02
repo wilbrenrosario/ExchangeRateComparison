@@ -1,0 +1,6 @@
+@ExchangeRateComparison.Api_HostAddress = http://localhost:5260
+
+GET {{ExchangeRateComparison.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

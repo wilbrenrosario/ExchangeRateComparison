@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "ExchangeRateComparison.Application/1.0.0": {
+        "dependencies": {
+          "ExchangeRateComparison.Domain": "1.0.0"
+        },
+        "runtime": {
+          "ExchangeRateComparison.Application.dll": {}
+        }
+      },
+      "ExchangeRateComparison.Domain/1.0.0": {
+        "runtime": {
+          "ExchangeRateComparison.Domain.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ExchangeRateComparison.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ExchangeRateComparison.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
