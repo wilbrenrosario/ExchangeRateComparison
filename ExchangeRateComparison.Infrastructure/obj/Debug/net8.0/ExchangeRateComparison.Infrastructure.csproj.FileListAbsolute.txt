@@ -1,5 +1,3 @@
-C:\Workspace\ExchangeRateComparison\ExchangeRateComparison.Infrastructure\bin\Debug\net8.0\appsettings.Development.json
-C:\Workspace\ExchangeRateComparison\ExchangeRateComparison.Infrastructure\bin\Debug\net8.0\appsettings.json
 C:\Workspace\ExchangeRateComparison\ExchangeRateComparison.Infrastructure\bin\Debug\net8.0\ExchangeRateComparison.Infrastructure.staticwebassets.endpoints.json
 C:\Workspace\ExchangeRateComparison\ExchangeRateComparison.Infrastructure\bin\Debug\net8.0\ExchangeRateComparison.Infrastructure.exe
 C:\Workspace\ExchangeRateComparison\ExchangeRateComparison.Infrastructure\bin\Debug\net8.0\ExchangeRateComparison.Infrastructure.deps.json

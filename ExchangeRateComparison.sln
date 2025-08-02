@@ -15,6 +15,20 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExchangeRateComparison.Doma
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExchangeRateComparison.Infrastructure", "ExchangeRateComparison.Infrastructure\ExchangeRateComparison.Infrastructure.csproj", "{9E8771B1-F98D-427D-87D1-A948BCF3A3FE}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "mocks-apis", "mocks-apis", "{E9120CA2-32A7-4CDB-8329-F7E72637C53B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiMock1", "mocks-apis\Api1Mock\ApiMock1.csproj", "{7C3492FC-BF3A-4940-A17E-A96337555B8C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{AECF1593-3719-4037-AC9B-6C14267E0868}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+		Dockerfile = Dockerfile
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiMock2", "mocks-apis\Api2Mock\ApiMock2.csproj", "{94297F15-A40D-4AAC-BEEE-907086447405}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiMock3", "mocks-apis\Api3Mock\ApiMock3.csproj", "{972E51E6-BD64-4268-84B1-7E8D112904E0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +51,18 @@ Global
 		{9E8771B1-F98D-427D-87D1-A948BCF3A3FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9E8771B1-F98D-427D-87D1-A948BCF3A3FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9E8771B1-F98D-427D-87D1-A948BCF3A3FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C3492FC-BF3A-4940-A17E-A96337555B8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C3492FC-BF3A-4940-A17E-A96337555B8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C3492FC-BF3A-4940-A17E-A96337555B8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C3492FC-BF3A-4940-A17E-A96337555B8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94297F15-A40D-4AAC-BEEE-907086447405}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94297F15-A40D-4AAC-BEEE-907086447405}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94297F15-A40D-4AAC-BEEE-907086447405}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94297F15-A40D-4AAC-BEEE-907086447405}.Release|Any CPU.Build.0 = Release|Any CPU
+		{972E51E6-BD64-4268-84B1-7E8D112904E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{972E51E6-BD64-4268-84B1-7E8D112904E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{972E51E6-BD64-4268-84B1-7E8D112904E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{972E51E6-BD64-4268-84B1-7E8D112904E0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,5 +72,8 @@ Global
 		{5CF28D84-75B3-4E11-AFD4-67E876F41ACA} = {E1770E80-4EE6-4B6D-A670-AB7828020BBD}
 		{066CE03A-D911-4988-BA47-AD6086AEF417} = {E1770E80-4EE6-4B6D-A670-AB7828020BBD}
 		{9E8771B1-F98D-427D-87D1-A948BCF3A3FE} = {E1770E80-4EE6-4B6D-A670-AB7828020BBD}
+		{7C3492FC-BF3A-4940-A17E-A96337555B8C} = {E9120CA2-32A7-4CDB-8329-F7E72637C53B}
+		{94297F15-A40D-4AAC-BEEE-907086447405} = {E9120CA2-32A7-4CDB-8329-F7E72637C53B}
+		{972E51E6-BD64-4268-84B1-7E8D112904E0} = {E9120CA2-32A7-4CDB-8329-F7E72637C53B}
 	EndGlobalSection
 EndGlobal

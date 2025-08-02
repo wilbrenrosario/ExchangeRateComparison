@@ -21,17 +21,17 @@ namespace ExchangeRateComparison.Api
 
             builder.Services.AddHttpClient("Provider1", client =>
             {
-                client.BaseAddress = new Uri("https://localhost:5051");
+                client.BaseAddress = new Uri("http://api1");
                 client.DefaultRequestHeaders.Add("Accept", "*/*");
             });
             builder.Services.AddHttpClient("Provider2", client =>
             {
-                client.BaseAddress = new Uri("https://localhost:5051");
+                client.BaseAddress = new Uri("http://api2");
                 client.DefaultRequestHeaders.Add("Accept", "*/*");
             });
             builder.Services.AddHttpClient("Provider3", client =>
             {
-                client.BaseAddress = new Uri("https://localhost:5051");
+                client.BaseAddress = new Uri("http://api3");
                 client.DefaultRequestHeaders.Add("Accept", "*/*");
             });
 
@@ -39,12 +39,22 @@ namespace ExchangeRateComparison.Api
             builder.Services.AddScoped<IExchangeRateProvider, Api2ExchangeProvider>();
             builder.Services.AddScoped<IExchangeRateProvider, Api3ExchangeProvider>();
 
+            // Log
+            builder.Logging.ClearProviders();
+            builder.Logging.AddConsole();
+
             var app = builder.Build();
 
             app.UseSwagger();
             app.UseSwaggerUI();
+
+            if (!app.Environment.IsProduction())
+                app.UseHttpsRedirection();
+
             app.UseAuthorization();
             app.MapControllers();
+
+            app.Urls.Add("http://*:80");
             app.Run();
         }
     }

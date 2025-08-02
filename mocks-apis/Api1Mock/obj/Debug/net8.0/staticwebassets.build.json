@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "C+7wTbPonC2NpSvyqewWBp6nZoOJyS49ITEzKz88doo=",
+  "Source": "ApiMock",
+  "BasePath": "_content/ApiMock",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

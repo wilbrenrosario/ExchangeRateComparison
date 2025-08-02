@@ -1,15 +1,18 @@
-using System.Net.Http.Json;
+using System.Text.Json;
 using ExchangeRateComparison.Domain;
+using ExchangeRateComparison.Domain.Models;
 
 namespace ExchangeRateComparison.Infrastructure.Providers;
 
 public class Api3ExchangeProvider : IExchangeRateProvider
 {
     private readonly HttpClient _http;
+    private readonly ILogger<Api3ExchangeProvider> _logger;
 
-    public Api3ExchangeProvider(IHttpClientFactory httpClientFactory)
+    public Api3ExchangeProvider(IHttpClientFactory httpClientFactory, ILogger<Api3ExchangeProvider> logger)
     {
         _http = httpClientFactory.CreateClient("Provider3");
+        _logger = logger;
     }
 
     public async Task<ExchangeResponse?> GetRateAsync(ExchangeRequest request)
@@ -26,24 +29,18 @@ public class Api3ExchangeProvider : IExchangeRateProvider
 
         try
         {
+            _logger.LogInformation("Calling API3 with body: {@Body}", body);
+
             var response = await _http.PostAsJsonAsync("/exchange", body);
             response.EnsureSuccessStatusCode();
             var data = await response.Content.ReadFromJsonAsync<Api3Response>();
             if (data?.Data?.Total is null) return null;
+
+            _logger.LogInformation("## Response API3 with: {json}", JsonSerializer.Serialize(data));
             return new ExchangeResponse("API3", data.Data.Total.Value);
         }
-        catch { return null; }
-    }
-
-    private class Api3Response
-    {
-        public int StatusCode { get; set; }
-        public string Message { get; set; } = "";
-        public DataNode? Data { get; set; }
-    }
-
-    private class DataNode
-    {
-        public decimal? Total { get; set; }
-    }
+        catch (Exception e) {
+            _logger.LogInformation("Error API3 con mensaje: {@msg}", e.Message); 
+            return null; }
+    }  
 }

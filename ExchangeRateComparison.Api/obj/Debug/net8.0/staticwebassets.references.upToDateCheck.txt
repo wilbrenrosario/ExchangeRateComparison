@@ -34,3 +34,12 @@ C:\Workspace\ExchangeRateComparison\ExchangeRateComparison.Infrastructure\obj\De
 C:\Workspace\ExchangeRateComparison\ExchangeRateComparison.Application\obj\Debug\net8.0\staticwebassets.build.json
 C:\Workspace\ExchangeRateComparison\ExchangeRateComparison.Domain\obj\Debug\net8.0\staticwebassets.build.json
 C:\Workspace\ExchangeRateComparison\ExchangeRateComparison.Infrastructure\obj\Debug\net8.0\staticwebassets.build.json
+C:\Workspace\ExchangeRateComparison\ExchangeRateComparison.Application\obj\Debug\net8.0\staticwebassets.build.json
+C:\Workspace\ExchangeRateComparison\ExchangeRateComparison.Domain\obj\Debug\net8.0\staticwebassets.build.json
+C:\Workspace\ExchangeRateComparison\ExchangeRateComparison.Infrastructure\obj\Debug\net8.0\staticwebassets.build.json
+C:\Workspace\ExchangeRateComparison\ExchangeRateComparison.Application\obj\Debug\net8.0\staticwebassets.build.json
+C:\Workspace\ExchangeRateComparison\ExchangeRateComparison.Domain\obj\Debug\net8.0\staticwebassets.build.json
+C:\Workspace\ExchangeRateComparison\ExchangeRateComparison.Infrastructure\obj\Debug\net8.0\staticwebassets.build.json
+C:\Workspace\ExchangeRateComparison\ExchangeRateComparison.Application\obj\Debug\net8.0\staticwebassets.build.json
+C:\Workspace\ExchangeRateComparison\ExchangeRateComparison.Domain\obj\Debug\net8.0\staticwebassets.build.json
+C:\Workspace\ExchangeRateComparison\ExchangeRateComparison.Infrastructure\obj\Debug\net8.0\staticwebassets.build.json

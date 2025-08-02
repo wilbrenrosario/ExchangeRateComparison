@@ -2,8 +2,6 @@ C:\Workspace\ExchangeRateComparison\ExchangeRateComparison.Application\bin\Debug
 C:\Workspace\ExchangeRateComparison\ExchangeRateComparison.Application\bin\Debug\net8.0\ExchangeRateComparison.Domain.runtimeconfig.json
 C:\Workspace\ExchangeRateComparison\ExchangeRateComparison.Application\bin\Debug\net8.0\ExchangeRateComparison.Domain.staticwebassets.endpoints.json
 C:\Workspace\ExchangeRateComparison\ExchangeRateComparison.Application\bin\Debug\net8.0\ExchangeRateComparison.Domain.exe
-C:\Workspace\ExchangeRateComparison\ExchangeRateComparison.Application\bin\Debug\net8.0\appsettings.Development.json
-C:\Workspace\ExchangeRateComparison\ExchangeRateComparison.Application\bin\Debug\net8.0\appsettings.json
 C:\Workspace\ExchangeRateComparison\ExchangeRateComparison.Application\bin\Debug\net8.0\ExchangeRateComparison.Application.staticwebassets.endpoints.json
 C:\Workspace\ExchangeRateComparison\ExchangeRateComparison.Application\bin\Debug\net8.0\ExchangeRateComparison.Application.exe
 C:\Workspace\ExchangeRateComparison\ExchangeRateComparison.Application\bin\Debug\net8.0\ExchangeRateComparison.Application.deps.json
