@@ -107,8 +107,9 @@ curl --location 'http://localhost:5000/api/Exchange' \
 
 ```json
 {
-    "provider": "API1",
-    "result": 5880.0
+    "provider": "API2",
+    "result": 6190.0,
+    "bestRate": 61.9
 }
 ```
 
