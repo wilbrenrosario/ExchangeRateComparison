@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiMock2", "mocks-apis\Api2
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiMock3", "mocks-apis\Api3Mock\ApiMock3.csproj", "{972E51E6-BD64-4268-84B1-7E8D112904E0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExchangeRateComparison.Tests", "ExchangeRateComparison.Tests\ExchangeRateComparison.Tests.csproj", "{45110A24-EB5B-425D-B9D7-CF6CEE00EB3E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{972E51E6-BD64-4268-84B1-7E8D112904E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{972E51E6-BD64-4268-84B1-7E8D112904E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{972E51E6-BD64-4268-84B1-7E8D112904E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45110A24-EB5B-425D-B9D7-CF6CEE00EB3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45110A24-EB5B-425D-B9D7-CF6CEE00EB3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45110A24-EB5B-425D-B9D7-CF6CEE00EB3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45110A24-EB5B-425D-B9D7-CF6CEE00EB3E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -75,5 +81,6 @@ Global
 		{7C3492FC-BF3A-4940-A17E-A96337555B8C} = {E9120CA2-32A7-4CDB-8329-F7E72637C53B}
 		{94297F15-A40D-4AAC-BEEE-907086447405} = {E9120CA2-32A7-4CDB-8329-F7E72637C53B}
 		{972E51E6-BD64-4268-84B1-7E8D112904E0} = {E9120CA2-32A7-4CDB-8329-F7E72637C53B}
+		{45110A24-EB5B-425D-B9D7-CF6CEE00EB3E} = {B99FBD5D-036E-490B-AE27-BAD9336AF979}
 	EndGlobalSection
 EndGlobal

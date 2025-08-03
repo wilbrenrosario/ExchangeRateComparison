@@ -1,6 +1,7 @@
 # ExchangeRateComparison
 
-## Autor:  Wilbren Rosario
+## Author
+* **Wilbren Rosario** - *Developer*
 
 ExchangeRateComparison es una solución .NET 8 para comparar tasas de cambio entre diferentes fuentes. Incluye una API principal y proyectos de dominio, aplicación e infraestructura, así como mocks para APIs externas.
 
