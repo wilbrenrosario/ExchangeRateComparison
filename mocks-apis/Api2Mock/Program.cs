@@ -11,11 +11,11 @@ var app = builder.Build();
 
 app.MapPost("/convert", async (HttpContext context) =>
 {
-    //if (context.Request.Headers["Authorization"] != "Bearer token-api2")
-    //{
-    //    context.Response.StatusCode = 401;
-    //    return;
-    //}
+    if (context.Request.Headers["Authorization"] != "Bearer token-api2")
+    {
+        context.Response.StatusCode = 401;
+        return;
+    }
 
     string xmlBody;
     using (var reader = new StreamReader(context.Request.Body, Encoding.UTF8))

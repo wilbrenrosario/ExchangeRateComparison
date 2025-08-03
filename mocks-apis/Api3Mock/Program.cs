@@ -8,8 +8,8 @@ var app = builder.Build();
 
 app.MapPost("/exchange", async (HttpRequest req) =>
 {
-    //var auth = req.Headers["Authorization"].ToString();
-    //if (auth != "Bearer token-api3") return Results.Unauthorized();
+    var auth = req.Headers["Authorization"].ToString();
+    if (auth != "Bearer token-api3") return Results.Unauthorized();
 
     var json = await req.ReadFromJsonAsync<ExchangeRequestJson>();
 

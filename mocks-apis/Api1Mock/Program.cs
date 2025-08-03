@@ -7,8 +7,8 @@ var app = builder.Build();
 
 app.MapPost("/rate", (HttpRequest req) =>
 {
-    //var auth = req.Headers["Authorization"].ToString();
-    //if (auth != "Bearer token-api1") return Results.Unauthorized();
+    var auth = req.Headers["Authorization"].ToString();
+    if (auth != "Bearer token-api1") return Results.Unauthorized();
 
     // Codigo para darle dinamismo.
     var random = new Random();

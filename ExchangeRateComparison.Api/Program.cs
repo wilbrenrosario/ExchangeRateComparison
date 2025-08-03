@@ -22,14 +22,17 @@ namespace ExchangeRateComparison.Api
             builder.Services.AddHttpClient("Provider1", client =>
             {
                 client.BaseAddress = new Uri("http://api1:81");
+                client.DefaultRequestHeaders.Add("Authorization", "Bearer token-api1");
             });
             builder.Services.AddHttpClient("Provider2", client =>
             {
                 client.BaseAddress = new Uri("http://api2:82");
+                client.DefaultRequestHeaders.Add("Authorization", "Bearer token-api2");
             });
             builder.Services.AddHttpClient("Provider3", client =>
             {
                 client.BaseAddress = new Uri("http://api3:83");
+                client.DefaultRequestHeaders.Add("Authorization", "Bearer token-api3");
             });
 
             builder.Services.AddScoped<IExchangeRateProvider, Api1ExchangeProvider>();
