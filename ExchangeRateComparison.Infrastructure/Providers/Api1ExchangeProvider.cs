@@ -28,7 +28,7 @@ public class Api1ExchangeProvider : IExchangeRateProvider
             if (data?.Rate is null) return null;
 
             _logger.LogInformation("## Response API1 with: {json}", JsonSerializer.Serialize(data));
-            return new ExchangeResponse("API1", request.Amount* data.Rate.Value);
+            return new ExchangeResponse("API1", request.Amount* data.Rate.Value, Math.Round(data.Rate.Value, 2));
         }
         catch (Exception e){
             _logger.LogInformation("Error API1 con mensaje: {@msg}", e.Message);

@@ -15,15 +15,15 @@ public class ExchangeRateServiceTests
 
         var mockProvider1 = new Mock<IExchangeRateProvider>();
         mockProvider1.Setup(x => x.GetRateAsync(It.IsAny<ExchangeRequest>()))
-                     .ReturnsAsync(new ExchangeResponse("Provider1", 5800));
+                     .ReturnsAsync(new ExchangeResponse("Provider1", 5800, 54));
 
         var mockProvider2 = new Mock<IExchangeRateProvider>();
         mockProvider2.Setup(x => x.GetRateAsync(It.IsAny<ExchangeRequest>()))
-                     .ReturnsAsync(new ExchangeResponse("Provider2", 6000));
+                     .ReturnsAsync(new ExchangeResponse("Provider2", 6000, 54));
 
         var mockProvider3 = new Mock<IExchangeRateProvider>();
         mockProvider3.Setup(x => x.GetRateAsync(It.IsAny<ExchangeRequest>()))
-                     .ReturnsAsync(new ExchangeResponse("Provider3", 5900));
+                     .ReturnsAsync(new ExchangeResponse("Provider3", 5900, 54));
 
         var providers = new List<IExchangeRateProvider>
         {

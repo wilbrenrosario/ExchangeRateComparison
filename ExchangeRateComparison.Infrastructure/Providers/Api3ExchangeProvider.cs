@@ -35,9 +35,10 @@ public class Api3ExchangeProvider : IExchangeRateProvider
             response.EnsureSuccessStatusCode();
             var data = await response.Content.ReadFromJsonAsync<Api3Response>();
             if (data?.Data?.Total is null) return null;
+            if (data?.Data?.Rate is null) return null;
 
             _logger.LogInformation("## Response API3 with: {json}", JsonSerializer.Serialize(data));
-            return new ExchangeResponse("API3", data.Data.Total.Value);
+            return new ExchangeResponse("API3", data.Data.Total.Value, data.Data.Rate.Value);
         }
         catch (Exception e) {
             _logger.LogInformation("Error API3 con mensaje: {@msg}", e.Message); 

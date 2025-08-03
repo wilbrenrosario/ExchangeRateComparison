@@ -33,12 +33,12 @@ public class Api2ExchangeProvider : IExchangeRateProvider
             response.EnsureSuccessStatusCode();
 
             var xml = await response.Content.ReadAsStringAsync();
-            var resultSerializer = new XmlSerializer(typeof(ResultXml));
+            var resultSerializer = new XmlSerializer(typeof(ExchangeResult));
             using var sr = new StringReader(xml);
-            var result = (ResultXml)resultSerializer.Deserialize(sr)!;
+            var result = (ExchangeResult)resultSerializer.Deserialize(sr)!;
 
             _logger.LogInformation("## Response API2 with: {json}", xml);
-            return new ExchangeResponse("API2", result.Result);
+            return new ExchangeResponse("API2", result.Total, result.Rate);
         }
         catch (Exception e) {
             _logger.LogInformation("Error API2 con mensaje: {@msg}", e.Message);

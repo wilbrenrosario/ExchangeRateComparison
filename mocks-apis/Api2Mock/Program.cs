@@ -25,7 +25,6 @@ app.MapPost("/convert", async (HttpContext context) =>
 
     var serializer = new XmlSerializer(typeof(ExchangeXml));
     ExchangeXml request;
-
     using (var stringReader = new StringReader(xmlBody))
     {
         request = (ExchangeXml)serializer.Deserialize(stringReader);
@@ -33,21 +32,22 @@ app.MapPost("/convert", async (HttpContext context) =>
 
     // Codigo para darle dinamismo.
     var random = new Random();
-
     decimal min = 56m;
     decimal max = 62m;
-
     double randomDouble = random.NextDouble();
     decimal randomDecimal = min + (decimal)randomDouble * (max - min);
-
     randomDecimal = Math.Round(randomDecimal, 1);
 
-    context.Response.ContentType = "application/xml";
     decimal total = Math.Round(request.Amount * randomDecimal, 2);
 
-    await context.Response.WriteAsync($"<Result>{total}</Result>");
-});
+    context.Response.ContentType = "application/xml";
+
+    // Respuesta manual sin serialización automática
+    await context.Response.WriteAsync($@"<ExchangeResult>
+            <Rate>{randomDecimal}</Rate>
+            <Total>{total}</Total>
+        </ExchangeResult>");
+        });
 
 app.Urls.Add("http://*:82");
-
 app.Run();

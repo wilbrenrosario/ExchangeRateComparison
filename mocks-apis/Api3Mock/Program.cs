@@ -31,7 +31,10 @@ app.MapPost("/exchange", async (HttpRequest req) =>
     {
         statusCode = 200,
         message = "OK",
-        data = new { total }
+        data = new { 
+            total,
+            rate = randomDecimal
+        }
     });
 });
 
