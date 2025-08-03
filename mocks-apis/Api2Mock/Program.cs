@@ -48,5 +48,6 @@ app.MapPost("/convert", async (HttpContext context) =>
     await context.Response.WriteAsync($"<Result>{total}</Result>");
 });
 
-app.Urls.Add("http://*:80");
+app.Urls.Add("http://*:82");
+
 app.Run();

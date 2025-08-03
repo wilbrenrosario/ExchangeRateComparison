@@ -13,16 +13,16 @@ services:
     build:
       context: ./mocks-apis/Api1Mock
     ports:
-      - "5051:80"
+      - "5051:81"
 
   api2:
     build:
       context: ./mocks-apis/Api2Mock
     ports:
-      - "5052:80"
+      - "5052:82"
 
   api3:
     build:
       context: ./mocks-apis/Api3Mock
     ports:
-      - "5053:80"
+      - "5053:83"

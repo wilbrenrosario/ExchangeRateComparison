@@ -18,21 +18,7 @@ ExchangeRateComparison es una solución .NET 8 para comparar tasas de cambio ent
 - [.NET 8 SDK](https://dotnet.microsoft.com/download)
 - Docker (Es requerido tenerlo para el despliegue)
 
-## Ejecución local
-
-1. Restaura los paquetes NuGet:
-   ```sh
-   dotnet restore
-   ```
-
-2. Ejecuta la API:
-   ```sh
-   dotnet run --project ExchangeRateComparison.Api/ExchangeRateComparison.Api.csproj
-   ```
-
-3. Accede a la documentación Swagger en `http://localhost/swagger` (puerto configurable).
-
-## Uso con Docker (RECOMENDADO)
+## Ejecución local: Uso con Docker (REQUISITO)
 
 ```sh
 docker compose build
@@ -56,7 +42,5 @@ curl --location 'http://localhost:5000/api/Exchange' \
 
 Incluye mocks en la carpeta `mocks-apis` para simular APIs externas.
 
-
----
 
 > Proyecto generado para comparar tasas de cambio de manera.

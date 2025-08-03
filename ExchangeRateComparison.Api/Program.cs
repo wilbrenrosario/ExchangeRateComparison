@@ -21,18 +21,15 @@ namespace ExchangeRateComparison.Api
 
             builder.Services.AddHttpClient("Provider1", client =>
             {
-                client.BaseAddress = new Uri("http://api1");
-                client.DefaultRequestHeaders.Add("Accept", "*/*");
+                client.BaseAddress = new Uri("http://api1:81");
             });
             builder.Services.AddHttpClient("Provider2", client =>
             {
-                client.BaseAddress = new Uri("http://api2");
-                client.DefaultRequestHeaders.Add("Accept", "*/*");
+                client.BaseAddress = new Uri("http://api2:82");
             });
             builder.Services.AddHttpClient("Provider3", client =>
             {
-                client.BaseAddress = new Uri("http://api3");
-                client.DefaultRequestHeaders.Add("Accept", "*/*");
+                client.BaseAddress = new Uri("http://api3:83");
             });
 
             builder.Services.AddScoped<IExchangeRateProvider, Api1ExchangeProvider>();
@@ -54,7 +51,6 @@ namespace ExchangeRateComparison.Api
             app.UseAuthorization();
             app.MapControllers();
 
-            app.Urls.Add("http://*:80");
             app.Run();
         }
     }
